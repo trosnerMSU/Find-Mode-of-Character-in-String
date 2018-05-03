@@ -1,0 +1,27 @@
+;Author: Tanner Rosner
+;Class: Comp Org 2 Prof. Lakhani
+;
+;Objective: Count how many 'T' characters 
+;Are in the string that is given under the
+;"String" memory
+;
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+.equ PrChr, 0x00		;Print character to stdout or outfile
+.equ Exit, 0x11			;Halt Execution
+
+
+.data
+String: .asciz "This is my string"
+Char: .asciz "T"
+
+.text
+
+LDRB R3, =String		;Loads a byte of the String value into R3
+LDR R4, =Char			;Loads Char into R4
+
+Loop:
+
+
+
